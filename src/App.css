@@ -1,0 +1,113 @@
+/* styles.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e9ecef;
+  margin: 0;
+  padding: 20px;
+  color: #343a40;
+  font-weight: 500;
+}
+
+h1 {
+  text-align: center;
+  color: #343a40;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 95%;
+  padding: 12px 20px;
+  margin-bottom: 30px;
+  /* border: 2px solid #c0ddfa; */
+  border-radius: 8px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+
+  border: 2px solid purple;
+
+
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+
+
+  border: 2px solid purple;
+}
+
+li:hover {
+  transform: translateY(-5px);
+}
+
+li strong {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+li span {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+li button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  border: solid 3px #0056b3;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li button:hover {
+  background-color: #0056b3;
+}
+
+/* Alternate background colors */
+li:nth-child(even) {
+  background-color: #e5bdff;
+  /* Light background for even cards */
+}
+
+li:nth-child(odd) {
+  background-color: #feffba;
+  /* White background for odd cards */
+}
+
+h2 {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  li {
+    padding: 15px;
+  }
+
+  li button {
+    width: 100%;
+    text-align: center;
+  }
+}
